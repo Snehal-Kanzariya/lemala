@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Poppins&family=Raleway:wght@300&display=swap');
+
+@layer base {
+    h1 {
+        @apply font-heading font-normal text-2xl sm:text-3xl lg:text-36 lg:leading-10 text-green-100
+    }
+    h2 {
+        @apply font-body font-normal text-base text-center text-green-100
+    }
+    h4 {
+        @apply font-body font-normal text-26 leading-8 text-white
+    }
+    p {
+        @apply font-body font-normal text-base text-green-100 text-opacity-50
+    }
+    .form-field {
+        @apply font-body font-normal text-base text-green-100 maxscreen:pr-23 pl-23 py-18 border border-gray-200 bg-gray-100 mb-6 mr-6 rounded-[5px]
+    }
+}
+
+@layer components {
+    .container {
+        @apply m-auto
+    }
+    .container-fluid {
+        @apply px-100
+    }
+    .subtitle {
+        @apply font-heading font-normal text-base leading-18 text-green-100
+    }
+    .explore-btn {
+        @apply font-body font-normal text-15 leading-22 text-green-100 pt-5 border-b border-green-200 w-max pb-1
+    }
+    .navigations li {
+        @apply font-body font-normal text-base text-white pr-31 items-center
+    }
+    .content-inner p {
+        @apply m-auto text-center
+    }
+    .grid-content h2{
+        @apply text-3xl leading-45 text-left
+    }
+    .grid-content .subtitle{
+        @apply pt-31 pb-2
+    }
+    .grid-content p {
+        @apply max-w-[553px] pt-18
+    }
+    .sicon img {
+        @apply bg-black-200 rounded-full p-[9px]
+    }
+    .footer-navbar-menu li {
+        @apply font-body font-normal text-sm leading-38 text-black-100 text-opacity-40
+    }
+    
+    .image-slider .swiper-button-prev:after{
+        /* @apply bg-[url('/home/encircle/Encircle/lemala/public/images/previous.svg')] bg-contain bg-no-repeat w-[44px] h-[44px] */
+    }
+    .image-slider .swiper-button-next, .image-slider .swiper-button-prev {
+        width: calc(var(--swiper-navigation-size)/ 50 * 62) ;
+    }
+    .image-slider .swiper-button-next:after{
+        /* @apply bg-[url('/home/encircle/Encircle/lemala/public/images/next.svg')] bg-contain bg-no-repeat w-[44px] h-[44px] */
+    }
+    .image-slider .swiper-button-next{
+        @apply right-8
+    }
+    .image-slider .swiper-button-prev{
+        @apply left-8
+    }
+    .image-slider .swiper-button-next:after,
+    .image-slider .swiper-button-prev:after{
+        content: '' !important;
+    }
+    .image-slider .swiper-horizontal>.swiper-pagination-bullets {
+        @apply bottom-[48px]
+    }
+    .image-slider .swiper-pagination-bullet-active{
+        @apply !bg-white
+    }
+    .image-slider .swiper-pagination-bullet {
+        @apply border border-white opacity-90 bg-transparent
+    }
+    .image-slider .swiper-pagination-bullet {
+        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
+        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));
+    }
+}
+
+@layer utilities {
+    .banner-img {
+        @apply bg-black-100 bg-opacity-30 bg-blend-darken bg-center;
+    }
+    .btn {
+        @apply text-18 leading-27 font-normal font-body text-center border border-white rounded-[5px] px-4 lg:px-30 py-2
+    }
+    .btn-green {
+        @apply text-base font-normal font-body text-green-200 border border-green-200 w-max px-4 py-2 rounded-[5px] tracking-[0.342753px]
+    }
+    .btn-white {
+        @apply font-body font-normal text-18 leading-27 text-white border border-white w-max px-4 py-2 rounded-[5px] tracking-[0.385597px] text-center
+    }
+}
